@@ -1,0 +1,367 @@
+/* Imports */
+@import url(https://fonts.googleapis.com/css?family=Lato|Oswald);
+/*@import url(http://fonts.googleapis.com/css?family=Open+Sans);*/
+
+.has-error small{color:red;font-weight:normal;margin-left:5px;}
+#jumbotron-index{margin-top:50px;background:#666;color:#eee;}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body{
+  padding-top: 20px;
+  margin-bottom: 60px;
+}
+/*
+**************************************
+* 4. Typography
+**************************************
+*/
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Oswald", sans-serif;
+}
+
+/*** NavBar ***/
+.navbar {
+  background-color: rgba(255, 255, 255, .9);
+  box-shadow: 0 2px 2px rgba(0, 0, 0, .1);
+}
+
+.navbar-inverse {
+	background-image: -webkit-linear-gradient(#fcfcfc 0%, #fff 100%);
+	background-image: -o-linear-gradient(#fcfcfc 0%, #fff 100%);
+	background-image: linear-gradient(#fcfcfc 0%, #fff 100%);
+}
+.navbar-brand{
+   padding: 1px 10px;
+   width:50px;
+}
+
+.navbar-brand > img {
+  max-height: 3.75rem;
+}
+
+.navbar-inverse{
+	background-color:#fff;
+	border-bottom-width:medium;
+	border-color: #1565C0;
+	color: #1565C0;
+}
+
+
+.navbar-inverse .navbar-toggle{
+	background:#1565C0;		
+}
+
+.navbar-inverse .navbar-nav{
+	color: #1565C0;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+    color: #1565C0;
+}
+
+.navbar-nav > li > a {
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.3);
+}
+.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .open > a {
+	color: #1565C0;
+	background-image: linear-gradient(to bottom,#fff 0,#fcfcfc 100%);
+	background-repeat: repeat-x;
+	-webkit-box-shadow: inset 0 3px 9px rgba(0,0,0,.25);
+	box-shadow: inset 0 3px 9px rgba(0,0,0,.25);
+}
+
+.navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:focus, .navbar-inverse .navbar-nav > .open > a:hover {
+	color: #000;
+	background-color: #fff;
+}
+
+.navbar-inverse .navbar-nav>li>a:hover{
+  color: #000;
+  background-color:transparent;
+  text-transform:uppercase; 
+ }
+ /*** lateral  capa formulario ***/
+ #lateral { width: 200px; }
+ /*** Footer ***/
+ .footer {
+  bottom: 0;
+  width: 100%;    
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  background-color: #000;
+  position: absolute;
+}
+
+/*** .container ***/
+body > .container {
+  padding: 60px 15px 0;
+}
+
+.container .text-muted {
+  margin: 20px 0;
+}
+
+.footer > .container {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+ /** **/
+/*================================
+    TABLE buttons table
+==================================*/
+
+/*button {
+   position: relative;
+   vertical-align: top;
+   height: 60px;
+   font-size: 22px;
+   color: white;
+   text-align: center;
+   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+   background: #3498db;
+   border: 0;
+   border-bottom: 2px solid #2a8bcc;
+   cursor: pointer;
+   -webkit-box-shadow: inset 0 -2px #2a8bcc;
+   box-shadow: inset 0 -2px #2a8bcc;
+}*/
+button:active {
+   top: 1px;
+   outline: none;
+   -webkit-box-shadow: none;
+   box-shadow: none;
+}
+button:disabled {
+   outline: none;
+   -webkit-box-shadow: none;
+   box-shadow: none;
+   opacity: 0.5;
+}
+/*================================
+    TABLE STYLES
+==================================*/
+table {
+   background-color: #FFF;
+   color: #333;
+   font-family: sans-serif;
+   font-size: .9em;
+   font-weight: 300;
+   text-align: center;
+   line-height: 40px;
+   border-spacing: 0;
+   border: 1px solid #428bca;
+   margin: 20px auto;
+   cursor: pointer;
+}
+thead tr:first-child {
+   background: #428bca;
+   color: #fff;
+   border: none;
+    text-align: center;
+}
+th {
+   font-weight: bold;
+   padding-left: 10px;
+   padding-right: 10px;
+   text-align: center;
+}
+
+th:first-child,
+td:first-child {
+   padding: 0 15px 0 20px;
+    text-align: center<
+}
+thead tr:last-child th {
+   border-bottom: 2px solid #ddd;
+   text-align: center;
+}
+tbody tr:hover {
+   background-color: #f0fbff;
+}
+tbody tr:last-child td {
+   border: none;
+    text-align: center;
+}
+tbody td {
+   border-bottom: 1px solid #ddd;
+   text-align: center;
+}
+td:last-child {
+   text-align: center;
+   padding-right: 10px;
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * DataTables features
+ */
+.prueba{text-align: center;}
+.dataTables_wrapper {
+	position: relative;
+/*	min-height: 302px;*/
+	clear: both;
+	_height: 302px;
+	zoom: 1; /* Feeling sorry for IE */
+}
+
+.dataTables_processing {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 250px;
+	height: 30px;
+	margin-left: -125px;
+	margin-top: -15px;
+	padding: 14px 0 2px 0;
+	border: 1px solid #428bca;
+	text-align: center;
+	color: #428bca;/*color de la cabecera de la tabla*/
+	font-size: 14px;
+	background-color: white;
+}
+
+.dataTables_length {
+	width: 40%;
+	float: left;
+}
+
+.dataTables_filter {
+	width: 50%;
+	float: right;
+	text-align: right;
+}
+
+.dataTables_info {
+	width: 60%;
+	float: left;
+}
+
+.dataTables_paginate {
+	width: 44px;
+/*	* width: 50px;*/
+	float: left;
+	text-align: right;
+}
+
+/* Pagination nested */
+.paginate_disabled_previous, .paginate_enabled_previous, .paginate_disabled_next, .paginate_enabled_next {
+	height: 19px;
+	width: 19px;
+	margin-left: 3px;
+	float: left;
+}
+
+.paginate_disabled_previous {
+	background-image: url('../images/back_disabled.jpg');
+}
+
+.paginate_enabled_previous {
+	background-image: url('../images/back_enabled.jpg');
+}
+
+.paginate_disabled_next {
+	background-image: url('../images/forward_disabled.jpg');
+}
+
+.paginate_enabled_next {
+	background-image: url('../images/forward_enabled.jpg');
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * Misc
+ */
+.dataTables_scroll {
+	clear: both;
+}
+
+.dataTables_scrollBody {
+	*margin-top: -1px;
+}
+
+.top, .bottom {
+	padding: 15px;
+	background-color: #F5F5F5;
+	border: 1px solid #CCCCCC;
+}
+
+.top .dataTables_info {
+	float: none;
+}
+
+.clear {
+	clear: both;
+}
+
+.dataTables_empty {
+	text-align: center;
+}
+
+tfoot input {
+	margin: 0.5em 0;
+	width: 100%;
+	color: #444;
+}
+
+tfoot input.search_init {
+	color: #999;
+}
+
+td.group {
+	background-color: #d1cfd0;
+	border-bottom: 2px solid #A19B9E;
+	border-top: 2px solid #A19B9E;
+    text-align: center;
+}
+
+td.details {
+	background-color: #d1cfd0;
+	border: 2px solid #A19B9E;
+    text-align: center;
+}
+
+
+.example_alt_pagination div.dataTables_info {
+	width: 40%;
+}
+
+.paging_full_numbers {
+	width: 400px;
+	height: 22px;
+	line-height: 22px;
+}
+
+.paging_full_numbers span.paginate_button,
+ 	.paging_full_numbers span.paginate_active {
+	border: 1px solid #aaa;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	padding: 2px 5px;
+	margin: 0 3px;
+	cursor: pointer;
+	*cursor: hand;
+}
+
+.paging_full_numbers span.paginate_button {
+	background-color: #ddd;
+}
+
+.paging_full_numbers span.paginate_button:hover {
+	background-color: #ccc;
+}
+
+.paging_full_numbers span.paginate_active {
+	background-color: #ADCCE9;
+}
+
+table.display tr.even.row_selected td {
+	background-color: #B0BED9;
+}
+
+table.display tr.odd.row_selected td {
+	background-color: #9FAFD1;
+}
+
